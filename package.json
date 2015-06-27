@@ -1,0 +1,31 @@
+{
+  "name": "reacat-theme-reacat",
+  "version": "0.0.0",
+  "description": "A Reacat theme for reacat.com",
+  "main": "lib/index.js",
+  "scripts": {
+    "start": "babel src --watch --out-dir lib",
+    "build": "babel src --out-dir lib",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reacat/reacat-theme-reacat.git"
+  },
+  "keywords": [
+    "reacat",
+    "reacat-theme"
+  ],
+  "author": "xcatliu <xcatliu@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/reacat/reacat-theme-reacat/issues"
+  },
+  "homepage": "https://github.com/reacat/reacat-theme-reacat",
+  "devDependencies": {
+    "babel": "^5.6.14"
+  },
+  "dependencies": {
+    "react": "^0.13.3"
+  }
+}
