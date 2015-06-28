@@ -1,9 +1,18 @@
 import React from 'react';
+import Head from './head';
+import styles from './styles';
 
 export default class Reacat extends React.Component {
   render() {
     return (
-      <p><pre>{JSON.stringify(this.props, null, 2)}</pre></p>
+      <html>
+        <Head {...this.props}/>
+        <body>
+          <div style={styles.container}>
+            <div dangerouslySetInnerHTML={{__html:this.props.htmlContent}}/>
+          </div>
+        </body>
+      </html>
     );
   }
 }
